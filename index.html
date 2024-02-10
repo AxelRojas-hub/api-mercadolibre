@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API MercadoLibre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <form class="form">
+        <input
+          class="input-busqueda"
+          type="text"
+          name="busqueda"
+          placeholder="Buscar productos, marcas y más..."
+        />
+        <button class="search-button">Buscar</button>
+      </form>
+    </header>
+    <section class="section">
+      <h3 class="resultados">Resultados:<span class="results-count"></span></h3>
+      <div class="results-list"></div>
+      <template id="result-item-template">
+        <a href="" class="vinculo-item" target="_blank">
+          <div class="card">
+            <div class="img-container">
+              <img src="" alt="" class="img" />
+            </div>
+            <div class="descripcion">
+              <p class="titulo-card"></p>
+              <p class="estado-card"></p>
+              <p class="label-vendidos-card">
+                Cantidad disponible: <span class="vendidos-card"></span>
+              </p>
+            </div>
+            <div class="columna-precio">
+              <p>$<span class="precio"></span></p>
+            </div>
+          </div>
+        </a>
+      </template>
+    </section>
+  </body>
+</html>
